@@ -3,69 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Multimédia de Ourém</title>
   </head>
+
   <body>
-    <nav>
-      <a href="index.html">Início</a> <a href="info.html">Informação</a>
-      <a href="local.html">Localização</a>
-      <a href="multimedia.html">Multimédia</a>
-    </nav>
     <header>
-      <h1>Locais de Ourém</h1>
-      <p>Descubra alguns dos lugares mais interessantes da região.</p>
+      <h1>
+        <span>Ourém</span>
+        <span class="hamburguer">&#9776;</span>
+      </h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="info.html">Informação</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+      </nav>
     </header>
-    <main>
-      <section>
-        <h2>Multimédia</h2>
-        <p>
-          Nesta página pode conhecer alguns dos locais mais emblemáticos de
-          Ourém através de fotografias, vídeo e poesia.
-        </p>
-        <p>
-          <a href="#fotografias">Fotografias</a> | <a href="#video">Vídeo</a> |
-          <a href="#poesia">Poesia</a>
-        </p>
+
+    <main class="multimedia">
+      <section class="multi-landing">
+        <div class="multi-frase">
+          <h2>Descobre Ourém</h2>
+          <p>
+            Uma cidade onde a história, a natureza e a tradição se encontram.
+          </p>
+
+          <div class="multi-links">
+            <a href="#fotografias">Fotografias</a>
+            <a href="#video">Vídeo</a>
+            <a href="#poesia">Poesia</a>
+          </div>
+        </div>
       </section>
-      <section>
-        <h3 id="fotografias">Fotografias</h3>
-        <div class="fotografias">
-          <img src="images/ourem1.jpg" alt="Castelo de Ourem" />
+
+      <section id="fotografias" class="multi-fotografias">
+        <h2>Fotografias</h2>
+
+        <p>
+          Conhece alguns dos locais mais emblemáticos de Ourém através destas
+          fotografias.
+        </p>
+
+        <div class="galeria">
+          <img src="images/ourem1.jpg" alt="Castelo de Ourém" />
+
           <img src="images/ourem2.jpg" alt="Muralhas do castelo" />
+
           <img src="images/ourem3.jpg" alt="Vista do castelo" />
+
           <img src="images/ourem4.jpg" alt="Agroal" />
+
           <img src="images/ourem5.jpg" alt="Monumento" />
-          <img src="images/ourem6.jpg" alt="Santuário de fátima" />
-          <img src="images/ourem7.jpg" alt="Vista de ourém" />
+
+          <img src="images/ourem6.jpg" alt="Santuário de Fátima" />
+
+          <img src="images/ourem7.jpg" alt="Vista de Ourém" />
+
           <img src="images/ourem8.jpg" alt="Vista do castelo" />
         </div>
       </section>
-      <section>
-        <h3 id="video">Vídeo</h3>
-        <p>Aqui será apresentado um vídeo sobre a cidade de Ourém.</p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/exmOVePVWik?si=00uXtQeTVM4KLTBI"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+
+      <section id="video" class="multi-video">
+        <video autoplay muted loop playsinline class="video-fundo">
+          <source src="images/ourem.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-conteudo">
+          <h2>Ourém em vídeo</h2>
+
+          <p>Descobre a beleza e a história da cidade de Ourém.</p>
+
+          <iframe
+            src="https://www.youtube.com/embed/exmOVePVWik"
+            title="Vídeo sobre Ourém"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </section>
-      <section>
-        <h3 id="poesia">Poesia</h3>
+
+      <section id="poesia" class="multi-poesia">
         <div class="poema">
+          <h2>Poesia</h2>
+
           <p>Entre colinas se ergue Ourém,</p>
           <p>com o seu castelo a contemplar,</p>
           <p>histórias antigas que o tempo tem,</p>
@@ -74,6 +106,9 @@
         </div>
       </section>
     </main>
-    <footer><p>© 2026 - Ourém</p></footer>
+
+    <footer>
+      <p>© 2026 - Ourém</p>
+    </footer>
   </body>
 </html>

@@ -3,24 +3,214 @@
     margin:0px;
     box-sizing: border-box;
 }
+
 header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background-color:aquamarine;
+    background-color:#3E2723;
     padding: 10px;
     gap: 15px;
     width:auto;
+    color:white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 nav{
     display:flex;
     gap:5px;
 }
 nav a{
-    background-color: aliceblue;
+    background-color: #800020;
     padding:10px;
     border-radius:6px;
     text-decoration:none;
     color:white;
 }
 
+nav a:hover{
+    background-color: #A51D24;
+}
+
+nav a:active{
+    background-color: #1E110F;
+}
+
+main{
+    background-color:#F5F2EB;
+}
+
+section{
+    height: 100vh;
+}
+
+#landing-page{
+    background-image:  linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.1) 100%), url(images/ourem.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:white;
+    padding: 20px;
+}
+
+#landing-page div{
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    font-size: 25px;
+    gap: 15px;
+}
+
+#cadeira{
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    scroll-margin-top: 7vh;
+    font-size: 20px;
+}
+
+#cadeira div{
+    display:flex;
+    align-items: center;
+    gap: 25px;
+
+}
+#cadeira div div{
+    background-color: #3E2723;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    align-items: flex-start;
+}
+
+#cadeira div div ul{
+    list-style: none;
+}
+
+#projetos{
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    scroll-margin-top: 7vh;
+    font-size: 20px;
+}
+
+#projetos div{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#projetos div article{
+    background-color: #3E2723;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+#projetos div article img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+footer{
+    display:flex;
+    gap: 15px;
+    background-color: #3E2723;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    bottom: 0;
+}
+
+@media (max-width:600px){
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    #landing-page {
+        background-position: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #landing-page div {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #cadeira {
+        height: auto;
+        min-height: 100vh;
+        scroll-margin-top: 170px;
+        font-size: 18px;
+        scroll-margin-top: 120px;
+    }
+
+    #cadeira > div {
+        flex-direction: column;
+    }
+
+    #cadeira div div {
+        width: 100%;
+    }
+
+    #cadeira img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    #projetos {
+        height: auto;
+        min-height: 100vh;
+        scroll-margin-top: 170px;
+        font-size: 18px;
+        scroll-margin-top: 120px;
+    }
+
+    #projetos > div {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #projetos div article {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #projetos div article img {
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

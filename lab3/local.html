@@ -8,78 +8,62 @@
   </head>
 
   <body>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="info.html">Informação</a>
-      <a href="local.html">Localização</a>
-      <a href="multimedia.html">Multimedia</a>
-    </nav>
-
     <header>
-      <h1>Locais de Ourém</h1>
-      <p>Descubra alguns dos lugares mais interessantes da região.</p>
+      <h1>
+        <span>Ourém</span>
+        <span class="hamburguer">&#9776;</span>
+      </h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="info.html">Informação</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+      </nav>
     </header>
-
     <main>
-      <section>
+      <section class="localizacao">
         <h2>Localização</h2>
 
-        <p>
-          Ourém é uma cidade portuguesa situada no distrito de Santarém, na
-          região do Médio Tejo. O concelho encontra-se no centro de Portugal e
-          possui uma área de cerca de 416 km².
-        </p>
+        <div class="local-container">
+          <div class="local-texto">
+            <p>
+              Ourém é uma cidade portuguesa situada no distrito de Santarém, na
+              região do Médio Tejo. O concelho encontra-se no centro de Portugal
+              e possui uma área de cerca de 416 km².
+            </p>
 
-        <p>
-          O território de Ourém encontra-se entre a Serra de Aire, a zona de
-          Fátima e o rio Nabão.
-        </p>
+            <p>
+              O território de Ourém encontra-se entre a Serra de Aire, a zona de
+              Fátima e o rio Nabão.
+            </p>
+          </div>
 
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24577.079270680224!2d-8.60345645230657!3d39.64667827289126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1882157eb40169%3A0xf2b672a33cd75824!2sOurem%2C%202490-481%20Our%C3%A9m!5e0!3m2!1spt-PT!2spt!4v1790681632556!5m2!1spt-PT!2spt"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+          <iframe
+            src="https://www.google.com/maps?q=Our%C3%A9m,Portugal&output=embed"
+            title="Mapa de Ourém"
+            loading="lazy"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </section>
 
-      <section>
+      <section class="locais">
         <h2>Locais para visitar</h2>
 
-        <ul>
-          <li>Castelo de Ourém</li>
-          <li>Vila Medieval de Ourém</li>
-          <li>Santuário de Fátima</li>
-          <li>Basílica da Santíssima Trindade</li>
-          <li>Serra de Aire</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>O que visitar?</h2>
-
-        <p>
-          Entre os locais de maior interesse encontram-se o Castelo de Ourém e a
-          sua vila medieval. O concelho inclui também Fátima, um dos principais
-          destinos de turismo religioso em Portugal.
-        </p>
+        <div class="caixa">
+          <ul>
+            <li>Castelo de Ourém</li>
+            <li>Vila Medieval de Ourém</li>
+            <li>Santuário de Fátima</li>
+            <li>Basílica da Santíssima Trindade</li>
+            <li>Serra de Aire</li>
+          </ul>
+        </div>
       </section>
     </main>
-
     <footer>
       <p>© 2026 - Ourém</p>
     </footer>
   </body>
 </html>
-``` A informação sobre a localização — distrito de Santarém, Médio Tejo e a
-posição entre a Serra de Aire, Fátima e o rio Nabão — é consistente com
-documentação do Município de Ourém. Assim, na página **Locais**, tens agora uma
-secção específica chamada **“Localização”** antes da lista de locais.

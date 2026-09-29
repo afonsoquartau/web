@@ -7,54 +7,85 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
     <header>
-      <h1>O Meu Primeiro Website</h1>
+      <h2>O Meu Primeiro Website</h2>
       <p>Bem-vindo à minha página de Interfaces Web!</p>
       <nav>
-      <a href="#landing-page">Início</a>
-      <a href="#cadeira">Sobre</a>
-      <a href="#projetos">Projetos</a>
-    </nav>
+        <a href="#landing-page">Início</a>
+        <a href="#cadeira">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="tutoriais.html">Tutoriais</a>
+      </nav>
     </header>
     <main>
       <section id="landing-page">
-        <h2>Sobre mim</h2>
-        <p>
-          Olá! O meu nome é <strong>Afonso Quartau</strong>. Estou a aprender
-          HTML e CSS e este é o meu primeiro website.
-        </p>
+        <div>
+          <h2>Sobre mim</h2>
+          <p>
+            Olá! O meu nome é <strong>Afonso Quartau</strong>. Estou a aprender
+            HTML e CSS e este é o meu primeiro website.
+          </p>
+        </div>
       </section>
       <section id="cadeira">
-        <h2>O que estou a aprender</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Interfaces Web</li>
-          <li>Desenvolvimento de websites</li>
-        </ul>
-        <img src="images/diw.svg" alt="DIW - Wordcloud" style="width: 300px" />
+        <h2>Desenvolvimento de Interfaces Web</h2>
+        <div>
+          <div>
+            <p>
+              A cadeira de Desenvolvimento de Interfaces Web permite aprender a
+              criar websites utilizando:
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>React & Next.js</li>
+            </ul>
+          </div>
+          <img
+            src="images/diw.svg"
+            alt="DIW - Wordcloud"
+            style="width: 300px"
+          />
+        </div>
       </section>
 
       <section id="projetos">
         <h2>Projetos</h2>
+        <p>Este são os meus projetos da cadeira!</p>
+        <div>
+          <article class="projeto">
+            <img src="images/lab1.jpg" alt="Projeto Lab 1" />
+            <h3>Lab 1</h3>
+            <p>O meu primeiro projeto web.</p>
+            <nav><a href="lab1/index.html">Lab 1</a></nav>
+          </article>
 
-        <p>
-          Este são os meus projetos da cadeira!
-        </p>
-         <nav>
-      <a href="index.html">Início</a>
-      <a href="lab1/index.html">lab1</a>
-      <a href="lab2/index.html">lab2</a>
-      <a href="lab3/index.html">lab3</a>
-    </nav>
+          <article class="projeto">
+            <img src="images/lab2.jpg" alt="Projeto Lab 2" />
+            <h3>Lab 2</h3>
+            <p>O meu segundo projeto web.</p>
+            <nav><a href="lab2/index.html">Lab 2</a></nav>
+          </article>
 
+          <article class="projeto">
+            <img src="images/lab3.jpg" alt="Projeto Lab 3" />
+            <h3>Lab 3</h3>
+            <p>O meu terceiro projeto web.</p>
+            <nav><a href="lab3/index.html">Lab 3</a></nav>
+          </article>
+        </div>
       </section>
     </main>
-    <footer><p>© 2026 - Afonso Quartau</p><a
-            href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
-            target="_blank"
-          >Aceder ao Moodle</a></footer>
-
+    <footer>
+      <p>© 2026 - Afonso Quartau</p>
+      <nav>
+        <a
+          href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
+          target="_blank"
+          >Aceder ao Moodle</a
+        >
+      </nav>
+    </footer>
   </body>
 </html>

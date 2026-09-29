@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F2EB;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #3E2723;
+    color: white;
+}
+
+header h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    padding: 10px 20px;
+    background-color: #800020;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #A51D24;
+}
+
+nav a:active {
+    background-color: #1E110F;
+}
+
+.hamburguer {
+    display: none;
+}
+
+main {
+    flex: 1;
+}
+
+.pagina-tutoriais {
+    padding: 30px;
+}
+
+.codepens h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.codepens > p {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.codepens-container {
+    display: flex;
+    gap: 30px;
+}
+
+.codepens-container article {
+    flex: 1;
+    min-width: 0;
+    background-color: #E8DDD4;
+    padding: 25px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.codepens-container p {
+    line-height: 1.5;
+}
+
+.codepens-container a {
+    align-self: flex-start;
+    padding: 12px 20px;
+    background-color: #800020;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.codepens-container a:hover {
+    background-color: #A51D24;
+}
+
+footer {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header h1 {
+        width: 100%;
+    }
+
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    header:hover nav,
+    header:focus-within nav {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .pagina-tutoriais {
+        padding: 15px;
+    }
+
+    .codepens h2 {
+        font-size: 26px;
+    }
+
+    .codepens > p {
+        font-size: 16px;
+    }
+
+    .codepens-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .codepens-container article {
+        padding: 20px;
+    }
+}
