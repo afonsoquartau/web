@@ -1,0 +1,7 @@
+.fotografias { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; } .fotografias img { width: 120px; height: 80px; object-fit: cover; } .poema p:nth-child(1) { font-weight: bold; } .poema p:nth-child(2) { font-style: italic; } .poema p:nth-child(3) { text-align: center; } .poema p:nth-child(4) { font-weight: bold; } .poema p:nth-child(5) { text-align: right; }
+th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
