@@ -7,24 +7,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="lab1/index.html">lab1</a>
-      <a href="lab2/index.html">lab2</a>
-    </nav>
+
     <header>
       <h1>O Meu Primeiro Website</h1>
       <p>Bem-vindo à minha página de Interfaces Web!</p>
+      <nav>
+      <a href="#landing-page">Início</a>
+      <a href="#cadeira">Sobre</a>
+      <a href="#projetos">Projetos</a>
+    </nav>
     </header>
     <main>
-      <section>
+      <section id="landing-page">
         <h2>Sobre mim</h2>
         <p>
           Olá! O meu nome é <strong>Afonso Quartau</strong>. Estou a aprender
           HTML e CSS e este é o meu primeiro website.
         </p>
       </section>
-      <section>
+      <section id="cadeira">
         <h2>O que estou a aprender</h2>
         <ul>
           <li>HTML</li>
@@ -32,23 +33,28 @@
           <li>Interfaces Web</li>
           <li>Desenvolvimento de websites</li>
         </ul>
-      </section>
-      <section>
-        <h2>Imagem</h2>
         <img src="images/diw.svg" alt="DIW - Wordcloud" style="width: 300px" />
       </section>
-      <section>
-        <h2>Links úteis</h2>
+
+      <section id="projetos">
+        <h2>Projetos</h2>
+
         <p>
-          <a
-            href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
-            target="_blank"
-          >
-            Aceder ao Moodle
-          </a>
+          Este são os meus projetos da cadeira!
         </p>
+         <nav>
+      <a href="index.html">Início</a>
+      <a href="lab1/index.html">lab1</a>
+      <a href="lab2/index.html">lab2</a>
+      <a href="lab3/index.html">lab3</a>
+    </nav>
+
       </section>
     </main>
-    <footer><p>© 2026 - Afonso Quartau</p></footer>
+    <footer><p>© 2026 - Afonso Quartau</p><a
+            href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
+            target="_blank"
+          >Aceder ao Moodle</a></footer>
+
   </body>
 </html>
