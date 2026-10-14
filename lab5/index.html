@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - JavaScript</title>
+</head>
+<body>
+    <h1>Lab 5 - JavaScript</h1>
+
+    <section>
+        <h2 id="passa-rato">1. Passa o rato por cima deste texto</h2>
+    </section>
+
+    <section>
+        <h2 id="titulo-cor">2. Pinta-me com os botões</h2>
+        <button class="color" data-color="red">Vermelho</button>
+        <button class="color" data-color="green">Verde</button>
+        <button class="color" data-color="blue">Azul</button>
+    </section>
+
+    <section>
+        <h2>3. Escreve uma cor em inglês</h2>
+        <input id="input-cor" type="text" placeholder="Ex.: orange">
+        <p id="texto-cor">Este texto muda de cor</p>
+    </section>
+
+    <section>
+        <h2>4. Escolhe uma cor para o fundo</h2>
+        <select id="cores-fundo">
+            <option value="white">Branco</option>
+            <option value="lightblue">Azul claro</option>
+            <option value="lightgreen">Verde claro</option>
+            <option value="lightyellow">Amarelo claro</option>
+        </select>
+    </section>
+
+    <section>
+        <h2>5. Organiza as bolas com Flexbox</h2>
+        <select id="direcao-flex">
+            <option value="row">row</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column">column</option>
+            <option value="column-reverse">column-reverse</option>
+        </select>
+        <div id="caixa-flex">
+            <div class="bola" style="background-color: red;"></div>
+            <div class="bola" style="background-color: blue;"></div>
+            <div class="bola" style="background-color: green;"></div>
+            <div class="bola" style="background-color: orange;"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Formulário</h2>
+        <form id="formulario">
+            <input id="nome" type="text" placeholder="Insere o teu nome" required>
+            <input id="idade" type="number" min="0" placeholder="Insere a tua idade" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensagem"></p>
+    </section>
+
+    <section>
+        <h2>7. Contador com Local Storage</h2>
+        <p>Contagem: <span id="contador">0</span></p>
+        <button id="aumentar">Incrementar</button>
+        <button id="diminuir">Decrementar</button>
+        <button id="reiniciar">Reset</button>
+    </section>
+
+    <section>
+        <h2>8. Contador automático</h2>
+        <p>Contagem <span id="relogio">0</span></p>
+    </section>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
