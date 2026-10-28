@@ -1,0 +1,193 @@
+/*A. Estilos Gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f9;
+    color: #263247;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/*B. Header e Navegação*/
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: white;
+    color: #1e3a8a;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #dbeafe;
+}
+
+/*C. Conteúdo Principal*/
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+main section {
+    scroll-margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/*D. Cartões dos Produtos*/
+
+.lista-produtos article {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc((100% - 32px) / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista-produtos img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.lista-produtos h3 {
+    font-size: 17px;
+}
+
+.descricao {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+.lista-produtos button {
+    margin-top: auto;
+}
+
+/*E. Cesto de Compras*/
+
+#cesto {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.lista-cesto article {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.lista-cesto h3 {
+    font-size: 15px;
+    flex: 1;
+    min-width: 160px;
+}
+
+.lista-cesto button {
+    background-color: #dc2626;
+}
+
+.lista-cesto button:hover {
+    background-color: #b91c1c;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/*F. Footer*/
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+}
+
+/*G. Responsividade*/
+
+@media (max-width: 800px) {
+    .lista-produtos article {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+@media (max-width: 500px) {
+    .lista-produtos article {
+        width: 100%;
+    }
+
+    #cesto {
+        padding: 16px;
+    }
+}
